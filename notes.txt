@@ -10,6 +10,11 @@
 
 >>> py manage.py test
 
+>>> py manage.py startapp accounts
+>>> py manage.py collectstatic
+>>> pipenv install whitenoise
+
+
 >>> heroku login
 
 >>> pip install gunicorn
@@ -28,6 +33,3 @@ if does not exist:
 >>> git remote add heroku https://git.heroku.com/"app name".git
 
 >>> git push heroku master
-
-
->>> py manage.py startapp accounts
