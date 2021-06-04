@@ -1,0 +1,33 @@
+>>> pip install pipenv
+>>> pipenv install django~=3.1.0   (~= ensures security updates)
+>>> pipenv shell (activate pipenv shell)
+>>> django-admin startproject config .
+>>> py manage.py runserver
+>>> exit  (to exist pipenv shell)
+
+>>> py manage.py migrate
+>>> py manage.py startapp pages
+
+>>> py manage.py test
+
+>>> heroku login
+
+>>> pip install gunicorn
+>>> pipenv install gunicorn
+
+>>> heroku create
+
+ignore static file optimization:
+>>> heroku config:set DISABLE_COLLECTSTATIC=1 -a="app name"
+
+~~~ if error on deployment, reinstall pipenv (delete environment files 1st)
+
+>>> git remote -v
+
+if does not exist:
+>>> git remote add heroku https://git.heroku.com/"app name".git
+
+>>> git push heroku master
+
+
+>>> py manage.py startapp accounts
