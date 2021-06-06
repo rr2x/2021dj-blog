@@ -33,4 +33,5 @@ class BlogDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
     # only execute redirect after delete operation
+    # reverse_lazy provides the value where to reverse
     success_url = reverse_lazy('home')

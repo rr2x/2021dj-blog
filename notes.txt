@@ -12,7 +12,7 @@
 
 >>> py manage.py startapp accounts
 >>> py manage.py collectstatic
->>> pipenv install whitenoise
+>>> pipenv install whitenoise  (for serving static files)
 
 
 >>> heroku login

@@ -10,6 +10,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    def get_absolute_url(self): #redirect after posting form
-        # reverse = use the url name to calculate path
+    def get_absolute_url(self):  # redirect after posting form
+        # reverse = use the url name to calculate path and execute
+        # reverse_lazy = if we are returning a value where to reverse and executed later
         return reverse("post_detail", args=[str(self.id)])
